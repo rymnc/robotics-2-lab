@@ -1,6 +1,8 @@
 ---
+
 # 2. Move the turtle bot in D shape
 ---
+
 1. **AIM**: Move the turtlebot in a D path
 2. **METHODS**:
   - Create catkin package: `catkin_create_pkg exp1_postlab rospy roscpp std_msgs`
