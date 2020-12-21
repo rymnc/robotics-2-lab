@@ -1,4 +1,4 @@
-<h1> 3. Move the turtle bot in Hexagon shape </h1>
+# 2. Move the turtle bot in Hexagon shape
 
 1. **AIM**: Move the turtlebot in a Hexagon path
 2. **METHODS**:

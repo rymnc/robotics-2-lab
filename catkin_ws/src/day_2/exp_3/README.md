@@ -3,7 +3,7 @@
 
 2. **METHOD**:
   - Create catkin package: `catkin_create_pkg exp3_postlab`
-  - Create urdf files: `cd src/exp3_postlab/src && mkdir urdf && mkdir launch && cd urdf && touch bot.urdf && cd launch && touch gazebo.launch`
+  - Create urdf files: `cd src/exp3_postlab/src && mkdir urdf && mkdir launch && cd urdf && touch bot.urdf && cd ../launch && touch gazebo.launch`
   - Add the launch file and urdf definition in this directory
   - Launch using `roslaunch exp3_postlab gazebo.launch`
 
