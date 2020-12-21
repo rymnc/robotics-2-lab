@@ -1,7 +1,4 @@
----
-
-# 2. Move the turtle bot in D shape
----
+<h1> 2. Move the turtle bot in D shape </h1>
 
 1. **AIM**: Move the turtlebot in a D path
 2. **METHODS**:
@@ -10,4 +7,4 @@
   - Add the script in this directory
   - Catkin Make: `catkin_make`
 3. **RESULT**: Successfully launched a turtlebot and moved it in the D shape
----
+

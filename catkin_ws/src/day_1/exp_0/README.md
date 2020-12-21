@@ -1,7 +1,4 @@
----
-
-# 1. Pub/Sub to publish and receive name in ROS
----
+<h1> 1. Pub/Sub to publish and receive name in ROS </h1>
 
 1. **AIM**: To print the name via pub/sub
 
@@ -13,4 +10,4 @@
   - Catkin Make: `catkin_make`
 
 3. **RESULT**: Successfully published and received messages via ROS's pubsub transport
----
+
