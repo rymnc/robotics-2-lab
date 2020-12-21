@@ -1,5 +1,5 @@
 ---
-# Pub/Sub to publish and receive name in ROS
+# 1. Pub/Sub to publish and receive name in ROS
 ---
 1. **AIM**: To print the name via pub/sub
 
