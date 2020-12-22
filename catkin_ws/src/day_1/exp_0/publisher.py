@@ -7,7 +7,7 @@ def publisher():
     rospy.init_node('talker', anonymous=True)
     rate = rospy.Rate(1) # 10hz
     while not rospy.is_shutdown():
-	name = Aaryamann Challani
+	name = "Aaryamann Challani"
         rospy.loginfo(name)
         pub.publish(name)
 
