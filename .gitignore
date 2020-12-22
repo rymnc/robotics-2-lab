@@ -38,9 +38,8 @@ ehthumbs.db
 Thumbs.db
 
 # ros-related
-topic_provider/rosbags
-
-*test*
-ground_truth_fetcher/datasets/
-
-a.html
+build/
+devel/
+logs/
+bin/
+lib/
