@@ -38,8 +38,11 @@ ehthumbs.db
 Thumbs.db
 
 # ros-related
-build/
-devel/
-logs/
-bin/
-lib/
+CMakeCache.txt
+CMakeLists.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+build
+devel
