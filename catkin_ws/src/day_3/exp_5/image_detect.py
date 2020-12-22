@@ -1,19 +1,3 @@
-# 5. Image Processing using OpenCV + ROS
-
-1. **AIM**: To find the distance of image from origin in ROS.
-
-2. **METHOD**: 
-  - Save your ros distribution in a variable `export ROS_DIST=<noetic|melodic|kinetic>`
-  - Install USB Camera support in ROS `sudo apt-get install ros-$ROS_DIST-usb-cam`
-  - Install OpenCV `sudo apt-get install opencv-python`
-  - Verify Installations are in `$PATH`
-  - Start roscore: `roscore`
-  - Launch USB Camera: `rosrun usb_cam usb_cam_node`
-  - Run the opencv script: `rosrun exp5_postlab image_detect.py`
-
-3. **CODE**:
-  - image_detect.py:
-```python
 #!/usr/bin/env python3
 
 import rospy
@@ -170,8 +154,8 @@ def image_callback(ros_image):
     except CvBridgeError as e:
         print(e)
 
-    lower_color = (36, 25, 25)
-    higher_color = (70, 255, 255)
+    lower_color = (100, 100, 100)
+    higher_color = (200, 200, 200)
 
     string1 = "first frame"
     string2 = ""
@@ -197,7 +181,7 @@ def image_callback(ros_image):
         string3 = 's=' + str(s)
 
     key = cv2.waitKey(1) & 0xFF
-    if key == ord('q'):
+    if key == ord('z'):
         return
 
 
@@ -207,11 +191,8 @@ def image_callback(ros_image):
 
 def listener():
     rospy.Subscriber("/usb_cam/image_raw", Image, image_callback)
-
     rospy.spin()
     cv2.destroyAllWindows()
-
-
 
 if __name__ == '__main__':
     try:
@@ -221,6 +202,3 @@ if __name__ == '__main__':
 
     except rospy.ROSInterruptException:
         pass
-```
-
-4. **RESULT**: Successfully implemented blue cap detection via opencv + ros
